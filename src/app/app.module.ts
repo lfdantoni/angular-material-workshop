@@ -8,15 +8,17 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatInputModule } from '@angular/material';
 import { MyUsersComponent } from './my-users/my-users.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MyNavComponent,
-    MyUsersComponent
+    MyUsersComponent,
+    InputsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { MyUsersComponent } from './my-users/my-users.component';
     MatListModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
